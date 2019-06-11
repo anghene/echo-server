@@ -3,8 +3,7 @@ var http = require('http');
 
 var app = express();
 
-const bodyParser = require('body-parser');
-app.use(bodyParser);
+app.use(express.json())
 
 app.get('/', function (req, res) {
   console.log(req.body);
